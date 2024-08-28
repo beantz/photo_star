@@ -1,0 +1,350 @@
+*, *::before, *::after {
+    /* removendo regras de borda inferior sendo aplicadas pelo boodstrap*/
+    box-sizing: content-box !important;
+}
+
+body {
+    /* removendo regras de bordas */
+    margin: 0 !important;
+}
+
+/* NAVEGACAO */
+#main-navbar {
+    display: flex;
+    background-color: #56bbd4;
+    padding: 24px;
+    color: black;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+.icon a i {
+    color: black;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #009bc2;
+    text-align: center;
+    font-size: 50px;
+    color:black;
+}
+
+.home-description {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #09728f;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-itens ul li {
+    font-size: 20px;
+}
+
+.nav-itens {
+    display: flex;
+    justify-content: flex-end;
+    width: 100% ;
+}
+
+.pipe {
+    border: 1px solid #333;
+    margin: 0 .1px;
+}
+
+/* MSG */
+.msg-header {
+   background-color: #009bc2;
+}
+
+.msg {
+    width: 50%;
+    margin: 0 auto;
+    padding: 7px;
+    border: solid 1px #000;
+    text-align: center;
+}
+
+.msg.error {
+    color: #842029;
+    background-color: #F8D7DA;
+    border-color: #F5C2C7;
+}
+
+.msg.success {
+    color: #0F5132;
+    background-color: #D1E7DD;
+    border-color: #BADBCC;
+}
+
+/* BODY */
+.main-container {
+    background-color: #009bc2;;
+    color: #fff;
+    min-height: 65vh; 
+    padding: 40px; /*para remover espaços em branco entre as divs*/
+}
+
+.allPosts { 
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    border-radius: 10px;
+}
+
+#post-index {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+} 
+
+.empty-list {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    font-weight: 5px;
+}
+
+/* AUTH */
+#auth-row {
+    justify-content: space-evenly; /*deixar as duas divs com espaço entre elas*/
+}
+
+#login-container h2, 
+#register-container h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#login-container form, 
+#register-container form{
+    max-width: 400px;
+    margin: 30px auto; 
+}
+
+#login-container input, 
+#register-container input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn.card {
+    color: #009bc2;
+    border-bottom: #0000;
+}
+
+/* EDIT PROFILE */
+.form-control.disabled {
+    background-color: #b4acac;
+}
+
+#container-imagebio {
+    margin-left: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #09728f;
+    border-radius: 20%;
+    background-size: cover; /*colocar o maximo da imagem no container */
+    background-position: center;
+    margin: auto;
+}
+
+.page-description {
+    color: #09728f;
+}
+
+#bio {
+    max-width: 400px;
+}
+
+/* PROFILE */
+.profile-container {
+    display: inline-block;
+}
+
+.profile-description {
+    max-width: 500px;
+    margin-left: 530px;
+}
+
+.post-container {
+    display: flex; /* tornar o container flexivel */
+    flex-wrap: wrap; /* faz com q se organizem em linhas, e os q nao couberem vao pra linha de baixo */
+    margin: 0 -15px;
+    background-color: #7ac6da;
+    border-radius: 10px;
+    border: 3px solid #09728f;
+    padding: 10px;
+}
+
+.post-card {
+    padding: 10px;
+    width: 18%;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#post-card {
+    background-color: #7ac6da;
+    border: none;
+    text-align: left;
+}
+
+#post-card a {
+    background-color: #7ac6da;
+    border: none;
+    text-align: left;
+}
+
+.post-card .card-post-img {
+    height: 250px;
+    width: 100%;
+    background-size: cover; /*garante que a imagem ocupe todo o espaço do elemento*/
+    background-position: center; /*centraliza a imagem dentro do elemento*/
+}
+
+.card-post-img {
+    border-radius: 10px;
+}
+
+.card-title a{
+    text-decoration: none;
+}
+
+/* CREATE POST */
+.create-post {
+    margin: 0 auto;
+}
+
+.create-post input,
+.create-post textarea {
+    max-width: 400px;
+}
+
+/* EDIT POST */
+#card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-bottom {
+    margin: 15px 5px 5px 0;
+}
+
+.card-bottom a, button {
+    color: #000;
+    border: 2px solid #09728f;
+    background-color: #7ac6da;
+    border-radius: 3px;
+    padding: 4px;
+    transition: .5s;
+}
+
+#delete a, button:hover {
+    color: #990f0f;
+    border: 2px solid #830707;
+}
+
+#edit a:hover {
+    color: #20cc59;
+    border: 2px solid #147001;
+}
+
+/* VIEW POST */
+#post-title {
+    text-align: center;
+    padding: 50px;
+}
+
+#post-image {
+    height: 300px;
+    background-size: cover; /*garante que a imagem ocupe todo o espaço do elemento*/
+    background-position: center;
+    border-radius: 10px;
+    border: 3px solid #09728f;
+}
+
+#post-image {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#post-container {
+    padding: 13px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#profile-description {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* COMMENTS */
+#comments-container {
+    margin-bottom: 50px;
+}
+
+.author-name a{
+    text-decoration: none;
+    color: #09728f;
+}
+
+.comments {
+    padding: 10px;
+}
+
+/* FOOTER */
+#container-footer {
+    height: 150px;
+    padding-top: 10px; /*para remover espaços em branco entre as divs*/
+    background-color: #56bbd4;
+    text-align: center;
+}
+
+#footer-links {
+    margin: 20px 0;
+}
+
+#social-container li,
+#footer-links li {
+    margin-right: 30px;
+}
+
+#container-footer p {
+    margin-left: 50px ;
+}
+
+#social-container li:hover,
+#footer-links li:hover {
+    background-color: #89b6c2;
+}
