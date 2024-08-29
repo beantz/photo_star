@@ -32,10 +32,6 @@
 
         }
         
-        public function findAll(){
-
-        }
-        
         public function getLatesPost(){
 
             $posts = [];
